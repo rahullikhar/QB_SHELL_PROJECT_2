@@ -228,5 +228,6 @@ bash deploy.sh <IP> <KEY.pem>
 
 ---
 
-*Qualibytes IT Academy Pvt. Limited — Noida, Uttar Pradesh*
 *Project 6: React App + Shell Script Deployment on AWS EC2*
+<img width="1915" height="979" alt="{D031301B-DFC8-44E1-A712-DE43AC1F70E2}" src="https://github.com/user-attachments/assets/dbb1b8a9-a35f-4958-b937-75556fba2a8b" />
+
