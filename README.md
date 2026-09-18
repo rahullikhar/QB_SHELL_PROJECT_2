@@ -1,4 +1,4 @@
-# Qualibytes IT Academy — Project 6
+# QB_SHELL_PROJECT_2 — Project 6
 ## React Website + Shell Script Deployment on AWS EC2
 
 ---
