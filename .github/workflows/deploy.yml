@@ -26,4 +26,4 @@ jobs:
             
             # Make sure the script is executable and run it
             chmod +x deploy.sh
-            ./deploy.sh
+            ./deploy.sh https://github.com/rahullikhar/QB_SHELL_PROJECT_2.git
