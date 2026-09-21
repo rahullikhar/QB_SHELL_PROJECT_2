@@ -1,29 +1,11 @@
-name: Deploy React App to EC2
-
-on:
-  push:
-    branches:
-      - main
-  workflow_dispatch:
-
-jobs:
-  deploy:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Connect and Deploy
-        uses: appleboy/ssh-action@master
-        with:
-          host: ${{ secrets.EC2_HOST_IP }}
-          username: ubuntu
-          key: ${{ secrets.EC2_SSH_KEY }}
-          script: |
-            # Navigate to your project folder
-            cd QB_SHELL_PROJECT_2
-            
-            # Pull the newest code from GitHub
-            git pull origin main
-            
-            # Make sure the script is executable and run it
-            chmod +x deploy.sh
-            ./deploy.sh https://github.com/rahullikhar/QB_SHELL_PROJECT_2.git
+script: |
+        # Navigate to your project folder
+        cd QB_SHELL_PROJECT_2
+        
+        # Pull the newest code from GitHub
+        git pull origin main
+        
+        # Make sure the script is executable and run it
+        git config --global --add safe.directory /home/ubuntu/qualibytes
+        chmod +x deploy.sh
+        ./deploy.sh https://github.com/rahullikhar/QB_SHELL_PROJECT_2.git
